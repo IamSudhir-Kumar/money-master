@@ -1,6 +1,6 @@
 # Crud-App
  
-create
-read
-update
+create-
+read-
+update-
 destroy
