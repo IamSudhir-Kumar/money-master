@@ -1,3 +1,4 @@
 # Crud-App
  
 create
+read
