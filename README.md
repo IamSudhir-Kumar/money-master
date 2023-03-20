@@ -3,3 +3,4 @@
 create
 read
 update
+destroy
