@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.nav-link {
+    @apply text-white hover:text-gray-200;
+  }
+  
+  .nav-button {
+    @apply focus:outline-none;
+  }
+ 

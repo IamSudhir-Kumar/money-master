@@ -1,37 +1,15 @@
 <svg viewBox="0 0 100 100">
   <defs>
-    <style>
-      .tree {
-        fill: none;
-        stroke: #000;
-        stroke-width: 2;
-      }
-
-      .leaves {
-        fill: #008000;
-      }
-
-      .coins {
-        fill: #ffff00;
-      }
-
-      .animation {
-        animation: drop-coins 1s linear infinite;
-      }
-
-      @keyframes drop-coins {
-        from {
-          transform: translateY(-10px);
-        }
-        to {
-          transform: translateY(10px);
-        }
-      }
-    </style>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1cb95c" />
+      <stop offset="100%" stop-color="#242a2a" />
+    </linearGradient>
   </defs>
 
-  <path class="tree" d="M50,50 L50,90 L40,80 L60,80 Z"/>
-  <path class="leaves" d="M50,50 L45,45 L55,45 Z"/>
-  <circle class="coins animation" cx="50" cy="60" r="5"/>
-</svg>
+  <g fill="url(#gradient)" stroke="#fff" stroke-width="2">
+    <path d="M40,50 C40,27.573 57.573,15 80,15 C102.427,15 120,27.573 120,50 C120,72.427 102.427,85 80,85 C57.573,85 40,72.427 40,50 Z" />
+    <circle cx="73" cy="50" r="20" />
+  </g>
 
+  <text font-family="sans-serif" font-size="20" x="35" y="40" fill="#fff">$</text>
+</svg>
