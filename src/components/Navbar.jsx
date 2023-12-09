@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './Logo.svg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,22 +6,23 @@ const Navbar = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="bg-[#232c2b] text-white px-4 py-2 
-                         flex justify-between items-center"
-                     style={{fontFamily: '"Roboto", sans-serif'}}
-    >
-            <a href="/" className="text-xl font-bold">
-                <img src={logo} className='logo' alt="My Logo" />
+        <nav
+            className="bg-[#232c2b] text-white px-4 py-2 flex justify-between items-center"
+            style={{ fontFamily: '"Roboto", sans-serif', borderBottom: '3px solid #1cb95c' }}
+        >
+            <a href="/" className="flex items-center font-pacifico font-thin text-2xl hover:text-[#1cb95c]" id="logo">
+                Money Master
             </a>
+
             <ul className="hidden md:flex space-x-4">
                 <li>
-                    <a href="/home" className="hover:text-[#1cb95c]">Home</a>
+                    <a href="/home" className="hover:text-[#1cb95c] text-lg">Home</a>
                 </li>
                 <li>
-                    <a href="/about" className="hover:text-[#1cb95c]">About</a>
+                    <a href="/about" className="hover:text-[#1cb95c] text-lg">About</a>
                 </li>
                 <li>
-                    <a href="/contact" className="hover:text-[#1cb95c]">Contact</a>
+                    <a href="/contact" className="hover:text-[#1cb95c] text-lg">Contact</a>
                 </li>
             </ul>
             <button
