@@ -7,3 +7,34 @@
 .nav-button {
   @apply focus:outline-none;
 }
+/* Navbar.css */
+
+/* Mobile menu animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Navbar toggle button animation */
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+/* Apply animation styles to the elements */
+.mobile-menu {
+  animation: slideIn 0.5s ease-out;
+}
+
+.toggle-icon {
+  animation: rotateIcon 0.5s ease-out;
+}
+

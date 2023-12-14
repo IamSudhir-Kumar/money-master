@@ -7,14 +7,14 @@ const Navbar = () => {
 
     return (
         <nav
-            className="bg-[#232c2b] text-white px-4 py-2 flex justify-between items-center"
+            className="bg-[#232c2b] text-white px-4 py-2 flex justify-between items-center mobile-menu"
             style={{ fontFamily: '"Roboto", sans-serif', borderBottom: '3px solid #1cb95c' }}
         >
             <a href="/" className="flex items-center font-pacifico font-thin text-2xl hover:text-[#1cb95c]" id="logo">
                 Money Master
             </a>
 
-            <ul className="hidden md:flex space-x-4">
+            <ul className="hidden md:flex space-x-4 hidden-menu">
                 <li>
                     <a href="/home" className="hover:text-[#1cb95c] text-lg">Home</a>
                 </li>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 type="button"
                 aria-label="Toggle Menu"
                 onClick={toggleMenu}
-                className="md:hidden focus:outline-none"
+                className="md:hidden focus:outline-none toggle-icon"
             >
                 <svg
                     className="w-6 h-6 text-white"
