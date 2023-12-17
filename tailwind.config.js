@@ -10,6 +10,7 @@ export default {
         sans: ["Roboto", "sans-serif"],
         whisper:['Whisper', "cursive"],
         pacifico:['Pacifico', "cursive"],
+        poppins :[ 'Poppins', "sans-serif"],
       },
     },
   },
