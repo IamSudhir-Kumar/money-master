@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-import logo from './images/7.png';
+import logo from './images/ll.svg';
+import animate from './images/ww.svg';
 
 const Home = () => {
   const slickSettings = {
@@ -52,7 +53,7 @@ const Home = () => {
 
 
       {/* Row 2 */}
-      <div className="bg-[#1cb95c] p-8 rounded-md">
+      {/* <div className="bg-[#1cb95c] p-8 rounded-md">
         <Slider {...slickSettings}>
           {headlines.map((headline, index) => (
             <div key={index}>
@@ -85,10 +86,23 @@ const Home = () => {
 
           ))}
         </Slider>
-      </div>
+      </div> */}
 
       {/* Row 3 */}
-      <div className="bg-white p-8">Item 4</div>
+      <div className="bg-white p-8">
+        <a href="" className="font-poppins text-[#1cb95c] text-4xl pointer-events-auto hover:text-black mb-0 px-0">Join Us</a>
+        <div className="border-b-2 border-black mt-1 "></div>
+        <form>
+    {/* Add your form fields here */}
+    {/* Example: */}
+    <input type="email" placeholder="Enter your email" className="mb-4 p-2 w-full border border-gray-300" required />
+
+    <button type="submit" className="bg-[#1cb95c] text-white p-2 rounded-md hover:bg-green-700">
+      Join Us
+    </button>
+    <img className="w-85 h-85"  src={animate} alt="" />
+  </form>
+      </div>
     </div>
   );
 };
