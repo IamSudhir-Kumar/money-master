@@ -1,22 +1,24 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Navbar from './components/Header/Navbar'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-import './index.css'
-import Home from './components/Pages/Home'
-import Footer from './components/Footer/Footer'
+// index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
+import Navbar from './components/Header/Navbar';
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
+import Footer from './components/Footer/Footer';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<React.StrictMode>
-<Navbar />
-<Home />
-<Footer />
-</React.StrictMode>
-  // <BrowserRouter>
-  // <Route>
-  //   <Link to="/">Home</Link>
-  //   <Link to="/about">About</Link>
-  //   <Link to="/contact">Contact</Link>
-  // </Route>
-  // </BrowserRouter>
-)
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Outlet />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
+    </Routes>
+    <Footer />
+  </BrowserRouter>,
+);

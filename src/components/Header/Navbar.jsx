@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,19 +11,19 @@ const Navbar = () => {
             className="bg-[#232c2b] text-white px-4 py-2 flex justify-between items-center mobile-menu"
             style={{ fontFamily: '"Roboto", sans-serif', borderBottom: '3px solid #1cb95c' }}
         >
-            <a href="/" className="flex items-center font-pacifico font-thin text-2xl hover:text-[#1cb95c]" id="logo">
+            <Link to="/" className="flex items-center font-pacifico font-thin text-2xl hover:text-[#1cb95c]" id="logo">
                 Money Master
-            </a>
+            </Link>
 
             <ul className="hidden md:flex space-x-4 hidden-menu">
                 <li>
-                    <a href="/home" className="hover:text-[#1cb95c] text-lg">Home</a>
+                    <Link to="/" className="hover:text-[#1cb95c] text-lg">Home</Link>
                 </li>
                 <li>
-                    <a href="/about" className="hover:text-[#1cb95c] text-lg">About</a>
+                    <Link to="/about" className="hover:text-[#1cb95c] text-lg">About</Link>
                 </li>
                 <li>
-                    <a href="/contact" className="hover:text-[#1cb95c] text-lg">Contact</a>
+                    <Link to="/contact" className="hover:text-[#1cb95c] text-lg">Contact</Link>
                 </li>
             </ul>
             <button
@@ -60,17 +61,17 @@ const Navbar = () => {
             {isOpen && (
                 <ul className="fixed top-0 right-0 bg-gray-800 text-white w-full md:hidden px-4 py-2">
                     <li>
-                        <a href="/home" className="block text-xl py-2 hover:text-gray-200">Home</a>
+                        <Link to="/home" className="block text-xl py-2 hover:text-gray-200">Home</Link>
                     </li>
                     <li>
-                        <a href="/about" className="block text-xl py-2 hover:text-gray-200">About</a>
+                        <Link to="/about" className="block text-xl py-2 hover:text-gray-200">About</Link>
                     </li>
                     <li>
-                        <a href="/contact" className="block text-xl py-2 hover:text-gray-200">Contact</a>
+                        <Link to="/contact" className="block text-xl py-2 hover:text-gray-200">Contact</Link>
                     </li>
                 </ul>
             )}
-            <a href="/login" className="ml-4 text-white bg-[#1bc060] rounded-md px-3 py-2 hover:bg-gray-700">Login</a>
+            <Link to="/login" className="ml-4 text-white bg-[#1bc060] rounded-md px-3 py-2 hover:bg-gray-700">Login</Link>
         </nav>
     );
 };
