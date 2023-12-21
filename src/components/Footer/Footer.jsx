@@ -10,16 +10,16 @@ const Footer = () => {
 
       <div className="container mx-auto flex flex-col items-center relative z-10 py-8">
         <div className="flex space-x-4 mb-4">
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#1cb95c]">
             <FaTwitter size={24} />
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#1cb95c]">
             <FaFacebook size={24} />
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#1cb95c]">
             <FaInstagram size={24} />
           </a>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#" className="hover:text-[#1cb95c]">
             <FaLinkedin size={24} />
           </a>
         </div>
