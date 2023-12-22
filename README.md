@@ -19,6 +19,7 @@ Money Master is a ReactJS application designed to help individuals of all ages a
 
 * **Frontend:** ReactJS
 * **Backend:** Firebase
+* **Style:** Tailwind CSS 
 * **Additional Libraries:**
     * react-firebase-hooks
     * react-icons
