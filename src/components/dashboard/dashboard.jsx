@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 const Dashboard = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 font-poppins">
@@ -27,8 +27,8 @@ const Dashboard = () => {
           {/* Placeholder for recent activity components */}
           <ul>
             <li>Activity 1</li>
-            <li>Activity 2</li>
-            <li>Activity 3</li>
+            <li></li>
+            <li></li>
           </ul>
         </section>
 
