@@ -28,11 +28,6 @@ const Home = () => {
           Through comprehensive tools, educational resources, and a community-driven ethos, we empower you to chart your unique path to financial liberation.
           Join us on this enriching expedition, redefine your relationship with money, and embrace a future of newfound freedom in the world of finance.</h5>
       </div>
-
-
-
-
-
       {/* Row 3 */}
       <div className="bg-white p-8 font-poppins">
   <a href="" className="font-poppins text-[#1cb95c] text-4xl pointer-events-auto hover:text-black mb-0 px-0">
