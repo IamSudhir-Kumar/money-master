@@ -9,6 +9,7 @@ import Contact from './components/Pages/Contact';
 import Footer from './components/Footer/Footer';
 import LoginPage from './components/Pages/login';
 import Dashboard from './components/dashboard/dashboard';
+import NotFound from './components/Pages/NotFound';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="*" element = {<NotFound/>} />
       </Route>
     </Routes>
     <Footer />
