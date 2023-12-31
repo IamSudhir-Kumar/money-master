@@ -1,9 +1,11 @@
-    const conf = {
-    appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL),
-    appwriteProjectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
-    appwriteDatabaseId: String(import.meta.env.VITE_APPWRITE_DATABASE_ID),
-    appwriteCollectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
-    appwriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
-    };
+import { Client, Account } from "appwrite";
 
-    export default conf;
+export const API_ENDPOINT = "https://cloud.appwrite.io/v1";
+export const PROJECT_ID = "658832602bd2cb5522b7";
+
+const client = new Client()
+  .setEndpoint(API_ENDPOINT)
+  .setProject(PROJECT_ID);
+
+export const account = new Account(client);
+export default client;

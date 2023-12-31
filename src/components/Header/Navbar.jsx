@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    
+    const isDashboardPage = location.pathname === '/dashboard';
 
     return (
         <nav
@@ -71,7 +74,15 @@ const Navbar = () => {
                     </li>
                 </ul>
             )}
-            <Link to="/login" className="ml-4 text-white bg-[#1bc060] rounded-md px-3 py-2 hover:bg-gray-700">Login</Link>
+            {isDashboardPage ? (
+                <Link to="/logout" className="ml-4 text-white bg-[#1bc060] rounded-md px-3 py-2 hover:bg-gray-700">
+                    Logout
+                </Link>
+            ) : (
+                <Link to="/login" className="ml-4 text-white bg-[#1bc060] rounded-md px-3 py-2 hover:bg-gray-700">
+                    Login
+                </Link>
+            )}
         </nav>
     );
 };
