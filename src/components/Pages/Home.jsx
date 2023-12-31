@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './images/ll.svg';
-
+import Joinus from '../signup form/joinus';
 import animate from './images/ww.svg';
 
 const Home = () => {
@@ -31,14 +31,15 @@ const Home = () => {
       </div>
       {/* Row 3 */}
       <div className="bg-white p-8 font-poppins">
-  <a href="" className="font-poppins text-[#1cb95c] text-4xl pointer-events-auto hover:text-black mb-0 px-0">
-    Join Us
-  </a>
-  <div className="border-b-2 border-black mt-1"></div>
- 
-</div>
-        {/* Row 4 */}
-        <img className="w-85 h-85"  src={animate} alt="" />
+        <a href="" className="font-poppins text-[#1cb95c] text-4xl pointer-events-auto hover:text-black mb-0 px-0">
+          Join Us
+        </a>
+        <div className="border-b-2 border-black mt-1"></div>
+        <Joinus />
+      </div>
+
+      {/* Row 4 */}
+      <img className="w-85 h-85" src={animate} alt="" />
     </div>
   );
 };
